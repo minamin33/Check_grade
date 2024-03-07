@@ -1,5 +1,5 @@
 from grade_calculation import GradeCalculation
-from average_grade import AverageGrade
+
 
 if __name__ == "__main__":
 
@@ -9,8 +9,10 @@ if __name__ == "__main__":
         grade = input("What is the grade per assignment?")
         student_grades = grade.split()
         for i in range (len(student_grades)):
-            student_grades[i]= int(student_grades[i])
-        result = AverageGrade(student_grad
+            student_grades[i]= float(student_grades[i])
+            
+        grade_calculator = GradeCalulation()
+        
 
         
         score = float(input("Enter score:"))
