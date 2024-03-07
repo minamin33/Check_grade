@@ -5,6 +5,9 @@ if __name__ == "__main__":
     try:
         num_work = int(input("How many assignments?"))
         student = input("Student name:")
+
+
+        
         grade = input("What is the grade per assignment?")
 
         
