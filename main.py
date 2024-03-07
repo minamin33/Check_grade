@@ -15,9 +15,7 @@ if __name__ == "__main__":
         
 
         
-        score = float(input("Enter score:"))
-        print(computegrade(score))
-    
+        
     except:
         print ("Incorrect input, please try again")
         
