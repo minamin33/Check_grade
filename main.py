@@ -4,14 +4,20 @@ from grade_calculation import GradeCalculation
 if __name__ == "__main__":
 
     try:
-        num_work = int(input("How many assignments?"))
-        student = input("Student name:")
-        grade = input("What is the grade per assignment?")
-        student_grades = grade.split()
-        for i in range (len(student_grades)):
-            student_grades[i]= float(student_grades[i])
+        student_grades = {}
+        num_students = int(input("Enter the number of students: ")
+        for i in range(num_students):
+        name = input("Enter the student name: ")
+        grades_str = float(input("Enter (name) assignments:")
+                       
             
-        grade_calculator = GradeCalulation()
+                
+        grades = grade_str.split()
+        for i in range (len(grades)):
+            grades[i]= float(grades[i])
+        search = ("Enter the student name to search: ")
+
+        
         
 
         
