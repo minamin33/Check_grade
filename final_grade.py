@@ -13,3 +13,4 @@ class GradeCalculation:
                 return("F")
         else:
             return ("Incorrect input, please try again")
+
