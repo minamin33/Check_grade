@@ -1,30 +1,37 @@
-from grade_calculation import GradeCalculation
-from average_grade import calculate_avg
+from final_grade import GradeCalculation 
+from average import average_grade
+from options import GradeManager
 
 if __name__ == "__main__":
+    grade_manager = GradeManager()
 
-    try:
-        student_grades = {}
-        num_students = int(input("Enter the number of students: ")
-        for i in range(num_students):
-        name = input("Enter the student name: ")
-        grades_str = input("Enter {name} assignments:")  
-                
-        grades = grades_str.split()
-        grades = []
-            for grade in grades:
-                grades.append(float(grade))
+    while True:
+        print("\nOptions:")
+        print("1. Enter students") 
+        print("2. Enter assignments")     
+        print("3. Find student's assignment") 
+        print("4. Quit") 
+        choice = input ("\nEnter choices (1,2,3,or 4): ")
+        if choice =="1":
+            grade_manager.enter_students()
+        elif choice =="2":
+            grade_manager.enter_assignments()
+        elif choice =="3":
+            print("\nSubmenu for 'Find student's assignment': ")
+            print("1. Find average score")
+            print("2. Find each score")
+            sub_choice = input("Enter choices (1 or 2): ")
+            if choice =="1":
+                grade_manager.find_students_average()
+            elif choice =="2":
+                grade_manager.find_students_assignments()
+    
+            else:
+                ("Invalid choice please try again")
+        elif choice =="4": 
+            grade_manager.quit_program()
 
-        if name in student_grades:
-            avg_grade = calculate_avg(student_grade(name))
-            final_grade = GradeCalculation(avg_grade)
-            print("The average grade for {name} is : {final_grade}")
         else:
-            print("Student {name} is not found" )
-            add = input(" Would you like to insert them? (yes/no)")
-                if add == "yes":
-                    
-
-    except:
-        print("Invalid input")
+            ("Invalid choice please try again")
+            
             
