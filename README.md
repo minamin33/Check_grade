@@ -1,5 +1,3 @@
-# Grade Management System
-
 # Overview
 
 
