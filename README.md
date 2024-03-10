@@ -1,17 +1,17 @@
 # Grade Management System
 
-## Overview
+# Overview
 
 
-## Table of Contents 
+# Table of Contents 
 
 
-## Getting Started
+# Getting Started
 
 
-## Problem Statement
+# Problem Statement
 
 
-## Tools and Technologies Used
+# Tools and Technologies Used
 
 
