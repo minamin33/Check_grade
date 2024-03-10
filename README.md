@@ -2,14 +2,16 @@
 
 
 # Table of Contents 
-
+** Getting Started
+** Addressing the Challenge
+** Technologies Used
 
 # Getting Started
 
 
-# Problem Statement
+# Addressing the Challenge
 
 
-# Tools and Technologies Used
+# Technologies Used
 
 
