@@ -1,5 +1,5 @@
-class GradeCalulation
-    def computegrade (score):
+class GradeCalculation:
+    def computegrade (score,self):
         if(score >= 0 & score <= 1.0):
             if(score >= 0.9):
                 return ("A")
