@@ -21,9 +21,9 @@ if __name__ == "__main__":
             print("1. Find average score")
             print("2. Find each score")
             sub_choice = input("Enter choices (1 or 2): ")
-            if choice =="1":
+            if sub_choice =="1":
                 grade_manager.find_students_average()
-            elif choice =="2":
+            elif sub_choice =="2":
                 grade_manager.find_students_assignments()
     
             else:
