@@ -1,16 +1,20 @@
 from average import average_grade
 class GradeManager:
     def __init__(self):
-        self.student = {}
+        self.student = {} #empty dictionary
     def enter_students(self):
         try:
             num_students = int(input("Enter the number of students: "))
             for i in range(num_students):
-                student_id = input("Enter the student ID: ")
-                name = input("Enter the student name: ")
-                self.student[student_id] = {"name" : name, "grade": [] }
-            print("Students added successfully!")
-
+                while True:
+                  student_id = input("Enter the student ID: ")
+                  if student_id in self.student:
+                      print("Student ID is already there,please enter another one")
+                  else:
+                    name = input("Enter the student name: ")
+                    self.student[student_id] = {"name" : name, "grade": [] }
+                    print("Students added successfully!")
+                    break
         except:
             print("Invalid input, please add a number")
 
@@ -35,7 +39,8 @@ class GradeManager:
         if name in self.student:
             avg_score =  average_grade.calculate_avg(self.student(name))
             print(name + " average score is " + avg_score)
-    def quit_program(self):
+    def quit_program(user_input):
         print("Exiting the program")
         exit()
+
 
